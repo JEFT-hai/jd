@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?gj8zju');
+  src:  url('fonts/icomoon.eot?gj8zju#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gj8zju') format('truetype'),
+    url('fonts/icomoon.woff?gj8zju') format('woff'),
+    url('fonts/icomoon.svg?gj8zju#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e901";
+}
+.icon-position:before {
+  content: "\e902";
+  color: #e33333;
+}
+.icon-down_arrow {
+  /*content: "\e900";*/
+ /* font-size: 12px;
+  color: #666;
+  color: #e33333;*/
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 15px;
+  height: 10px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+.icon-cart:before {
+  content: "\e93a";
+  margin-right: 10px;
+}
+.icon-search:before {
+  content: "\e986";
+  line-height: 35px;
+}
+.prev_arrow,.next_arrow{
+  color: #fff;
+  font-style: normal;
+  transform: scale3d(1,1.2,0);
+  -ms-transform: scale3d(1,1.2,0);
+}
+/*.icon-if_icon-ios7-arrow-right_211607:before {
+  content: "\e920";
+}
+.icon-if_icon-ios7-arrow-left_211689:before {
+  content: "\e921";
+}*/
+

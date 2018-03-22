@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>date-picker</title>
+	<link rel="stylesheet" href="date-picker.css">
+	<style>
+	body{
+		width: 100%;
+		height: 100%;
+	}
+	html{
+		width: 0;
+		height: 0;
+	}
+		.datepicker{
+			margin:30px 130px;
+			outline: none;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" class="datepicker">
+	<input type="text" class="ss datepicker">
+</body>
+<script src="date-picker.js"></script>
+<script>
+	var date_picker = document.getElementsByClassName('datepicker');
+	// console.log(date_picker);
+	
+	for(var i = 0;i<date_picker.length;i++){
+		console.log()
+		date_picker[i].addEventListener('focus',function(e){
+			// console.log(this);
+			var e = e || window.event;
+			var target = e.target;
+			var top = target.offsetTop;
+			var left = target.offsetLeft;
+			var W = target.offsetWidth;
+			var H = target.offsetHeight;
+			// console.log(target);
+			// if(target.value != ''){
+			// 	var val = target.value;
+			// 	console.log(val);
+			// 	datepicker.select.month = val.slice(5,7);
+			// 	datepicker.select.date = val.slice(8,10);
+				// console.log(datepicker.select.month);
+				// console.log(datepicker.select.date);
+			// }
+			// console.log(1);
+			datepicker.target = target;
+			// console.log(datepicker.target.selected);
+			// target.addEventListener('mouseenter',function(e){
+			// 	console.log(e);
+			// 	if(this.onfocus){
+			// 		this.focus();
+			// 	}
+			// },false);
+			var datepicker_wrapper = document.querySelector('.ui-datepicker-wrapper');
+			datepicker.init();
+			if(!datepicker_wrapper){
+				
+				var datepicker_wrapper = document.querySelector('.ui-datepicker-wrapper');
+			}else{
+				datepicker_wrapper.style.display = 'block';
+			}
+
+
+
+			datepicker_wrapper.style.left = left+ W/2 + 'px';
+			datepicker_wrapper.style.top = top + H -1+ 'px';
+		},false); 
+			
+		date_picker[i].addEventListener('mouseleave',function(e){
+			var datepicker_wrapper = document.querySelector('.ui-datepicker-wrapper');
+			if(!datepicker_wrapper){
+				return;
+			}
+			var datepicker_inner = datepicker_wrapper.querySelector('.ui-date-picker');
+
+			// console.log(e.relatedTarget)
+			if(e.relatedTarget.nodeName.toLowerCase() != 'body'){
+				return;
+			}
+			// console.log(this);
+				datepicker.hidden();
+				this.blur();
+		},false);
+	}
+	// datepicker.init();
+</script>
+</html>

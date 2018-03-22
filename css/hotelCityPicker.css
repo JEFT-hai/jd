@@ -1,0 +1,94 @@
+ul,li{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.ui_hotelPicker_wrapper{
+	font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	margin-left: -255px;
+	border:1px solid #ddd;
+	color: #666;
+	/*display: none;*/
+}
+/*.gnjp_citylist_picker{
+	width: 350px;
+}*/
+.ui-hotelList_title{
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;
+	color: #999;
+	margin:10px 10px 0;
+}
+.ui-hotelList_head{
+	font-size: 0;
+	text-align: center;
+	margin:5px 0;
+	border-bottom: 1px solid #ddd;
+	height: 24px;
+	padding:0 24px 0 5px;
+}
+.ui-hotelList_head .cur{
+	border:1px solid #ddd;
+	border-bottom: none;
+	position: relative;
+	z-index: 200;
+	color: #c81623;
+	background: #fff;
+}
+.ui-hotelList_head li{
+	padding:0 5px;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	font-size: 12px;
+	display: inline-block;
+	cursor: pointer;
+}
+/*.ui-hotelList_head li+li{
+	margin-left: 1px;
+}*/
+.ui-hotelList_content{
+	color: #666;
+	margin-left: 5px;
+}
+.ui-hotelList_content .ui-tab_list{
+	display: none;
+}
+.ui-hotelList_content .ui-tab_list:first-child{
+	display: block;
+}
+.ui-hotelList_content .item .fl{
+	float: left;
+	width: 9px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	color: #c81623;
+	margin-left: 3px;
+	font-size: 12px;
+}
+.ui-hotelList_content .item .fn{
+	font-size: 0;
+	overflow: hidden;
+}
+.ui-hotelList_content .item .fn a{
+	float: left;
+	height: 23px;
+	line-height: 23px;
+	margin-bottom: 2px;
+	color: #005ea7;
+	width: 45px;
+	font-size: 12px;
+	text-indent: 5px;
+	overflow: hidden;
+}
+.ui-hotelList_content .item .fn a:hover{
+	color: #005ea7;
+}

@@ -1,0 +1,94 @@
+		.ui-datepicker-wrapper{
+			position: absolute;
+			z-index: 1000;
+			margin-left: -119px;
+		}
+		.ui-date-picker-body .no-click{
+			cursor: default;
+		}
+		.ui-date-picker-body .no-click:hover{
+			background: #fff;
+		}
+		.ui-date-picker{
+			background: #fff;
+			width: 238px;
+			padding:0 4px;
+			border:1px solid #ddd;
+			font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+			color: #666;
+		}
+		.ui-date-picker-header{
+			height: 35px;
+			text-align: center;
+			line-height: 35px;
+			font-size: 14px;
+			color: #666;
+		}
+		.ui-date-picker a{
+			color: #d7d7d7;
+			font-size: 14px;
+			display: block;
+			width: 15px;
+			height: 100%;
+			text-decoration: none;
+		}
+		.ui-date-picker-now{
+			max-width: 300px;
+			display: inline-block;
+		}
+		.ui-date-picker a.ui-date-picker-left-btn{
+			float: left;
+		}
+		.ui-date-picker a.ui-date-picker-right-btn{
+			float: right;
+		}
+		.ui-date-picker-content{
+			width: 238px;
+			text-align: center;
+			/*font-size: 0;*/
+		}
+		.ui-date-picker-content th,.ui-date-picker-content td{
+			width: 34px;
+			padding: 0;
+		}
+		.ui-date-picker-head{
+			width: 238px;
+			background: #f5f5f5;
+		}
+		.ui-date-picker-body{
+			width: 238px;
+		}
+		.ui-date-picker-week{
+			/*background: #f5f5f5;*/
+			height: 34px;
+		}
+		.ui-date-picker-body tr{
+			border-top: 1px dotted #ccc;
+			height: 31px;
+		}
+		.ui-date-picker-body td{
+			cursor:pointer;
+		}
+		.ui-date-picker-body tr td:hover{
+			background: #f5f5f5;
+		}
+		.ui-date-picker-body tr td.selected{
+			position: relative;
+			color: #fff;
+			z-index: 2;
+		}
+		.ui-date-picker-body tr td.selected:hover{
+			/*z-index: 1;*/
+			background: #fff;
+		}
+		.ui-date-picker-body tr td.selected:after{
+			position: absolute;
+			content: '';
+			background: #c81623;
+			height: 21px;
+			width: 100%;
+			top:15px;
+			margin-top: -11px;
+			left: 0;
+			z-index: -1;
+		}

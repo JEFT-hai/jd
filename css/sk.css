@@ -1,0 +1,84 @@
+
+	.sk{
+		width:1190px;
+		height: 275px;
+		margin:0 auto 30px;
+		text-align: center;
+	}
+	.sk_hd{
+		width: 190px;
+		height: 275px;
+		background: #e83632;
+		position: relative;
+		float: left;
+	}
+	.sk_hd_lk{
+		width: 190px;
+		height: 275px;
+		display: block;
+		color: #fff;
+	}
+	.sk_hd_lk:hover{
+		color: #fff;
+	}
+	.sk_tit,.sk_subtit,.sk_des{
+		position: absolute;
+		width: 100%;
+	}
+	.sk_tit{
+		top:42px;
+		font-size: 34px;
+	}
+	.sk_subtit{
+		top:90px;
+		font-size: 20px;
+		opacity: 0.6;
+	}
+	.sk_des{
+		top:170px;
+		font-size: 16px;
+	}
+	.sk_cd{
+		position: absolute;
+		top: 212px;
+		left: 30px;
+		height: 40px;
+	}
+
+	.cd_item{
+		position: relative;
+		float: left;
+		background: #2f3430;
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+		margin-right: 5px;
+		font-size: 20px;
+	}
+	.cd_item:before{
+		position: absolute;
+		content: '';
+		height: 1px;
+		width: 100%;
+		background: #e83432;
+		top:50%;
+		left: 0;
+	}
+
+	.sk_bd{
+		float: left;
+	}
+	.sk_list{
+		float: left;
+		width: 799px;
+		height: 275px;
+		position: relative;
+	}
+	.sk_channel{
+		float: left;
+		width: 200px;
+		height: 275px;
+	}
+	.sk_slider_list{
+		
+	}

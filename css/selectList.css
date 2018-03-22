@@ -1,0 +1,107 @@
+    ul,li{
+    	padding: 0;
+    	margin: 0;
+    }
+    a{
+    	text-decoration: none;
+    }
+
+	.ui_selcetPicker_wrapper{
+		font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+		background: #fff;
+		overflow: hidden;
+		position: absolute;
+		z-index: 100;
+		margin-left: -255px;
+		border:1px solid #ddd;
+		color: #666;
+		/*display: none;*/
+	}
+	/*.gnjp_citylist_picker{
+		width: 350px;
+	}*/
+	.ui-selectList_title{
+		height: 23px;
+		line-height: 23px;
+		font-size: 12px;
+		color: #999;
+		margin:10px 10px 0;
+	}
+	.ui-selectList_head{
+		font-size: 0;
+		text-align: center;
+		margin:3px 10px;
+	}
+	.ui-selectList_head .cur{
+		background: #c81623;
+		color: #fff;
+	}
+	.gamesDK_list_picker .ui-selectList_head li{
+		width: 65px;
+	}
+	.gamesDK_list_picker .ui-selectList_content .item .fn a{
+		width: 82px;
+	}
+	.ui-selectList_head li{
+		width: 54px;
+		height: 20px;
+		line-height: 20px;
+		color: #666;
+		font-size: 12px;
+		background: #e6e6e6;
+		display: inline-block;
+		margin-right: 1px;
+		cursor: pointer;
+	}
+	/*.ui-selectList_head li+li{
+		margin-left: 1px;
+	}*/
+	.ui-selectList_content{
+		color: #666;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	.ui-selectList_content .ui-tab_list{
+		display: none;
+	}
+	.ui-selectList_content .ui-tab_list:first-child{
+		display: block;
+	}
+	.ui-selectList_content .item{
+		padding:5px 0;
+		overflow: hidden;
+	}
+	.ui-selectList_content .item+.item{
+		border-top:1px dotted #e6e6e6;
+	}
+	.ui-selectList_content .item .fl{
+		float: left;
+		width: 9px;
+		text-align: center;
+		height: 25px;
+		line-height: 25px;
+		color: #c81623;
+		margin-left: 3px;
+		font-size: 12px;
+	}
+	.ui-selectList_content .item .fn{
+		font-size: 0;
+		overflow: hidden;
+	}
+	.ui-selectList_content .item .fn a{
+		float: left;
+		height: 23px;
+		line-height: 23px;
+		margin-bottom: 2px;
+		color: #666;
+		font-size: 12px;
+		width: 64px;
+		text-indent: 7px;
+
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.ui-selectList_content .item .fn a:hover{
+		color: #e40015;
+	}
